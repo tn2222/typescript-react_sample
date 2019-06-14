@@ -1,7 +1,9 @@
 import * as React from "react";
 import { Theme, withStyles } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
-import DeleteIcon from '@material-ui/icons/Delete';
+// import DeleteIcon from '@material-ui/icons/Delete';
+import Done from '@material-ui/icons/Done';
+
 
 
 class TodoList extends React.Component<any, any> {
@@ -18,10 +20,10 @@ class TodoList extends React.Component<any, any> {
                 {this.props.items.map((item, i) => (
                     <div key={item.id} className={classes.row}>
                         <IconButton 
-                            aria-label="Delete" 
+                            aria-label="Done" 
                             className={classes.margin} 
                             onClick={() => this.handleDelete(i)}>
-                            <DeleteIcon fontSize="small" />
+                            <Done fontSize="small" />
                         </IconButton>
                     {item.text}</div>
                 ))}

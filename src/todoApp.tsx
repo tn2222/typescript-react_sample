@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Theme, withStyles, FormControl, InputLabel, Input, InputAdornment, Button, Icon } from '@material-ui/core';
+import { Theme, withStyles, FormControl, Input, Button } from '@material-ui/core';
 import Paper from '@material-ui/core/Paper';
 import TodoList from './todoList';
 
