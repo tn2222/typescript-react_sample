@@ -18,7 +18,7 @@ import TodoList from './todoList';
             <div className={classes.container}>
                 <Paper className={classes.paper}>
 
-                    <h3>TODO</h3>
+                    <h3>TODO App</h3>
                     <FormControl onSubmit={this.handleSubmit}>
                         <Input onChange={this.handleChange} value={this.state.text} className={classes.input}/>
                     </FormControl>
@@ -52,7 +52,7 @@ import TodoList from './todoList';
     handleSubmit(e: any) {
         e.preventDefault();
         if (this.state.text == '') {
-            alert('テキストボックスが空です。');
+            alert('TextBox is Empty...');
             return;
         }
         let newItem = {

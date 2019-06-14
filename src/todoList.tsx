@@ -8,6 +8,7 @@ class TodoList extends React.Component<any, any> {
     constructor(props: any) {
         super(props);
         this.handleDelete = this.handleDelete.bind(this);
+        this.state = props.items
     }
 
     render() {
@@ -29,9 +30,9 @@ class TodoList extends React.Component<any, any> {
     }
 
     handleDelete(i) {
-        this.state.items.splice(i, 1);
-        this.setState((prevState) => ({
-            items: prevState.items
+        this.props.items.splice(i, 1);
+        this.setState((props) => ({
+            items: props.items
         }));
     }    
 }
